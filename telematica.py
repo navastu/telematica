@@ -14,7 +14,7 @@ with header:
 with dataset:
     st.header('Tabla de Registros')
     st.text('Registro de Lunes-Domingo con corte a las 11:59:00')
-    df = pd.read_csv('data/registros.csv')
+    df = pd.read_csv('registros.csv')
     fechas = list(df['Fecha'])
     print(fechas)
     df['Fecha'] = pd.to_datetime(fechas, format="mixed")
